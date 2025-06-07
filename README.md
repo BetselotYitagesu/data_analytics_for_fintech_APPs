@@ -95,3 +95,19 @@ python src/scrape.py
 Run the preprocessing script:
 
     python src/preprocess.py
+
+📌 GitHub Guidelines
+
+    Use the task-1 branch for all Task 1 activities
+
+    Commit frequently with clear, meaningful messages
+
+    Use .gitignore to exclude virtual environment, cache files, etc.
+
+🔮 Next Steps
+
+    Sentiment analysis and topic classification
+
+    Dashboard and data visualization
+
+    Comparative feedback analysis across banks
