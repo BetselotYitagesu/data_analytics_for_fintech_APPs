@@ -163,3 +163,33 @@ Columns: review_id, review_text, sentiment_label, sentiment_score, top_keywords,
 
 - CSV file: `data/Sentiment_review.csv`
 - Fields inserted: review_id, review_text, sentiment_label, sentiment_score, etc.
+
+## 📌 Task 4: Insights and Recommendations
+
+### ✅ Objective
+
+Derive actionable insights from sentiment scores and themes, visualize key patterns, and recommend app improvements for CBE, BOA, and Dashen Bank.
+
+### 🔍 What Was Done
+
+- **Insight Analysis:**  
+  • Identified top drivers (positive feedback) and pain points (negative feedback) per bank by aggregating sentiment labels.  
+  • Compared average sentiment scores across banks and over time.  
+  • Drafted recommendations based on quantitative evidence.
+
+- **Visualizations:**  
+  • Bar chart of driver vs. pain-point review counts by bank
+  • Sentiment distribution per bank
+  • Line plot of average daily sentiment score by bank
+
+- **Ethical Considerations:**  
+  • Noted potential bias: more negative reviews may be posted by dissatisfied users.  
+  • Highlighted sampling limits (Play Store only).
+
+### 🛠 Tools & Libraries
+
+Python, pandas, seaborn, matplotlib, Jupyter / VS Code, Streamlit (for future dashboard).
+
+### 📁 Files Added
+
+- `notebooks/visualizations/insights.ipynb`

@@ -16,6 +16,7 @@ fintechenv/
 .vscode/
 
 # Data folders
+data/
 data/raw/
 data/processed/
 
