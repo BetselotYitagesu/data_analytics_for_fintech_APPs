@@ -193,3 +193,11 @@ Python, pandas, seaborn, matplotlib, Jupyter / VS Code, Streamlit (for future da
 ### 📁 Files Added
 
 - `notebooks/visualizations/insights.ipynb`
+
+## Database Integration
+
+1. **Schema**  
+   Execute the SQL in `db/create_database.sql` and `db/schema.sql` to create the database and table:
+   ```bash
+   psql -U postgres -f db/schema.sql
+   ```

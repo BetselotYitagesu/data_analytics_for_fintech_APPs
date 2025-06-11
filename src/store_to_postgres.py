@@ -1,6 +1,8 @@
 """ 
 This is Python code to store data into database
 """
+# scr/store_to_postgres.py
+# Uses schema defined in ../db/schema.sql
 
 
 import pandas as pd
