@@ -113,3 +113,53 @@ Run the preprocessing script:
     Dashboard and data visualization
 
     Comparative feedback analysis across banks
+
+## 📌 Task 2: Thematic Analysis of App Reviews
+
+### ✅ Objective
+
+Extract key themes and recurring topics from user reviews of three Ethiopian fintech apps (CBE, BOA, Dashen Bank) to understand common issues and suggestions.
+
+### 🔍 What Was Done
+
+- **Preprocessing:** Tokenized text using spaCy, removed stop words and non-alphabetic tokens, and lemmatized words.
+- **Keyword/N-Gram Extraction:** Applied TF-IDF using scikit-learn to extract top keywords from each review.
+- **Thematic Grouping:** Grouped keywords into themes such as Login & Access, Transaction Speed, App Stability, Customer Support, and Feature Requests.
+- **Result Storage:** Saved enriched data to `data/thematic_analysis_results.csv` including review_id, review_text, sentiment_label, sentiment_score, top_keywords, and themes.
+
+### 🛠 Tools & Libraries
+
+Python, pandas, scikit-learn, spaCy, NLTK (for stop words), Jupyter Notebook or VS Code.
+
+### 📁 Script Location
+
+`scr/thematic_analysis.py`
+
+### 📦 Output
+
+File: `data/thematic_analysis_results.csv`  
+Columns: review_id, review_text, sentiment_label, sentiment_score, top_keywords, themes
+
+## Task 3: Store Sentiment Analysis Results in PostgreSQL
+
+### ✅ What We Did
+
+- Created a PostgreSQL database `fintech_reviews`
+- Created a table `sentiment_reviews` with necessary columns
+- Wrote and executed `scr/store_to_postgres.py` to insert cleaned sentiment data from `Sentiment_review.csv`
+
+### 🔧 Tools Used
+
+- PostgreSQL
+- psycopg2
+- pandas
+- pgAdmin4
+
+### 📁 Script Location
+
+- `scr/store_to_postgres.py`
+
+### 📊 Data Inserted
+
+- CSV file: `data/Sentiment_review.csv`
+- Fields inserted: review_id, review_text, sentiment_label, sentiment_score, etc.
